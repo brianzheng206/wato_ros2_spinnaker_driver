@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=MV Github Shortcut
+TryExec=xdg-open
+Exec=xdg-open /usr/share/doc/spinnaker-doc
+Icon=/usr/share/pixmaps/spinnaker-doc.ico
+Terminal=false
+Type=Application
+StartupNotify=false

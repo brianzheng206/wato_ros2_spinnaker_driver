@@ -1,0 +1,239 @@
+[0.008s] Invoking command in '/home/brian-zheng/spinnaker/build/flir_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/brian-zheng/spinnaker/src/flir_camera_driver/flir_camera_msgs -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/brian-zheng/spinnaker/install/flir_camera_msgs
+[0.200s] -- The C compiler identification is GNU 13.3.0
+[0.331s] -- The CXX compiler identification is GNU 13.3.0
+[0.349s] -- Detecting C compiler ABI info
+[0.466s] -- Detecting C compiler ABI info - done
+[0.473s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.473s] -- Detecting C compile features
+[0.473s] -- Detecting C compile features - done
+[0.480s] -- Detecting CXX compiler ABI info
+[0.587s] -- Detecting CXX compiler ABI info - done
+[0.592s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.593s] -- Detecting CXX compile features
+[0.593s] -- Detecting CXX compile features - done
+[0.597s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.711s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.756s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.778s] -- Found builtin_interfaces: 2.0.2 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[0.810s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.819s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.830s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.842s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.853s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.862s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.864s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.314s] -- Found ament_cmake_cppcheck: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)
+[1.316s] -- Found ament_cmake_cpplint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)
+[1.318s] -- Found ament_cmake_uncrustify: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_uncrustify/cmake)
+[1.322s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.950s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.185s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.192s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.311s] -- Found PythonExtra: /usr/bin/python3  
+[2.600s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[2.636s] -- Found ament_cmake_flake8: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)
+[2.638s] -- Found ament_cmake_pep257: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)
+[2.640s] -- Found ament_cmake_copyright: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_copyright/cmake)
+[2.641s] -- Found ament_cmake_lint_cmake: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_lint_cmake/cmake)
+[2.642s] -- Found ament_cmake_xmllint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_xmllint/cmake)
+[2.648s] -- Configuring done (2.6s)
+[2.668s] -- Generating done (0.0s)
+[2.674s] -- Build files have been written to: /home/brian-zheng/spinnaker/build/flir_camera_msgs
+[2.681s] Invoked command in '/home/brian-zheng/spinnaker/build/flir_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/brian-zheng/spinnaker/src/flir_camera_driver/flir_camera_msgs -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/brian-zheng/spinnaker/install/flir_camera_msgs
+[2.681s] Invoking command in '/home/brian-zheng/spinnaker/build/flir_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/brian-zheng/spinnaker/build/flir_camera_msgs -- -j20 -l20
+[2.726s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.736s] [  2%] Built target ament_cmake_python_symlink_flir_camera_msgs
+[2.857s] running egg_info
+[2.857s] creating flir_camera_msgs.egg-info
+[2.866s] writing flir_camera_msgs.egg-info/PKG-INFO
+[2.867s] writing dependency_links to flir_camera_msgs.egg-info/dependency_links.txt
+[2.867s] writing top-level names to flir_camera_msgs.egg-info/top_level.txt
+[2.867s] writing manifest file 'flir_camera_msgs.egg-info/SOURCES.txt'
+[2.883s] [  2%] Built target flir_camera_msgs__rosidl_generator_type_description
+[2.891s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.895s] reading manifest file 'flir_camera_msgs.egg-info/SOURCES.txt'
+[2.896s] writing manifest file 'flir_camera_msgs.egg-info/SOURCES.txt'
+[2.900s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.915s] [  6%] Built target ament_cmake_python_build_flir_camera_msgs_egg
+[3.089s] [  6%] Built target flir_camera_msgs__cpp
+[3.111s] [  9%] [32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/camera_control__functions.c.o[0m
+[3.111s] [ 11%] [32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/camera_control__type_support.c.o[0m
+[3.113s] [ 13%] [32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/image_meta_data__description.c.o[0m
+[3.113s] [ 15%] [32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/image_meta_data__functions.c.o[0m
+[3.114s] [ 20%] [32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/image_meta_data__type_support.c.o[0m
+[3.114s] [ 20%] [32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/camera_control__description.c.o[0m
+[3.188s] [ 22%] [32m[1mLinking C shared library libflir_camera_msgs__rosidl_generator_c.so[0m
+[3.227s] [ 22%] Built target flir_camera_msgs__rosidl_generator_c
+[3.238s] [ 27%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.238s] [ 27%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.239s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.239s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.241s] [ 36%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.241s] [ 36%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.435s] [ 38%] [32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/flir_camera_msgs/msg/camera_control__type_support.cpp.o[0m
+[3.435s] [ 40%] [32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/flir_camera_msgs/msg/camera_control__type_support.cpp.o[0m
+[3.435s] [ 43%] [32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/flir_camera_msgs/msg/image_meta_data__type_support.cpp.o[0m
+[3.437s] [ 45%] [32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/flir_camera_msgs/msg/image_meta_data__type_support.cpp.o[0m
+[3.441s] [ 47%] [32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/flir_camera_msgs/msg/detail/camera_control__type_support.c.o[0m
+[3.442s] [ 50%] [32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/flir_camera_msgs/msg/detail/image_meta_data__type_support.cpp.o[0m
+[3.443s] [ 52%] [32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/flir_camera_msgs/msg/detail/image_meta_data__type_support.c.o[0m
+[3.444s] [ 54%] [32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/flir_camera_msgs/msg/detail/camera_control__type_support.cpp.o[0m
+[3.457s] [ 59%] [32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/flir_camera_msgs/msg/detail/dds_fastrtps/camera_control__type_support.cpp.o[0m
+[3.457s] [ 59%] [32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/flir_camera_msgs/msg/detail/dds_fastrtps/image_meta_data__type_support.cpp.o[0m
+[3.464s] [ 63%] [32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/flir_camera_msgs/msg/detail/image_meta_data__type_support_c.cpp.o[0m
+[3.464s] [ 63%] [32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/flir_camera_msgs/msg/detail/camera_control__type_support_c.cpp.o[0m
+[3.478s] [ 65%] [32m[1mLinking C shared library libflir_camera_msgs__rosidl_typesupport_introspection_c.so[0m
+[3.478s] [ 68%] [32m[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_c.so[0m
+[3.501s] [ 68%] Built target flir_camera_msgs__rosidl_typesupport_introspection_c
+[3.511s] [ 68%] Built target flir_camera_msgs__rosidl_typesupport_c
+[3.671s] [ 70%] [32m[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_cpp.so[0m
+[3.702s] [ 70%] Built target flir_camera_msgs__rosidl_typesupport_cpp
+[3.723s] [ 72%] [32m[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[3.772s] [ 72%] Built target flir_camera_msgs__rosidl_typesupport_introspection_cpp
+[3.804s] [ 75%] [32m[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[3.842s] [ 75%] Built target flir_camera_msgs__rosidl_typesupport_fastrtps_c
+[3.894s] [ 77%] [32m[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.933s] [ 77%] Built target flir_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[3.954s] [ 77%] Built target flir_camera_msgs
+[3.972s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.229s] [ 79%] Built target flir_camera_msgs__py
+[4.245s] [ 81%] [32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/flir_camera_msgs/msg/_image_meta_data_s.c.o[0m
+[4.245s] [ 84%] [32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/flir_camera_msgs/msg/_camera_control_s.c.o[0m
+[4.367s] [ 86%] [32m[1mLinking C shared library libflir_camera_msgs__rosidl_generator_py.so[0m
+[4.399s] [ 86%] Built target flir_camera_msgs__rosidl_generator_py
+[4.419s] [ 88%] [32mBuilding C object CMakeFiles/flir_camera_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.419s] [ 90%] [32mBuilding C object CMakeFiles/flir_camera_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[4.420s] [ 93%] [32mBuilding C object CMakeFiles/flir_camera_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.501s] [ 95%] [32m[1mLinking C shared module rosidl_generator_py/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_c.so[0m
+[4.503s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[4.507s] [100%] [32m[1mLinking C shared module rosidl_generator_py/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[4.524s] [100%] Built target flir_camera_msgs_s__rosidl_typesupport_fastrtps_c
+[4.525s] [100%] Built target flir_camera_msgs_s__rosidl_typesupport_c
+[4.528s] [100%] Built target flir_camera_msgs_s__rosidl_typesupport_introspection_c
+[4.537s] Invoked command in '/home/brian-zheng/spinnaker/build/flir_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/brian-zheng/spinnaker/build/flir_camera_msgs -- -j20 -l20
+[4.538s] Invoking command in '/home/brian-zheng/spinnaker/build/flir_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/brian-zheng/spinnaker/build/flir_camera_msgs
+[4.547s] -- Install configuration: "RelWithDebInfo"
+[4.548s] -- Execute custom install script
+[4.549s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/flir_camera_msgs
+[4.561s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/msg/ImageMetaData.json
+[4.570s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/msg/CameraControl.json
+[4.582s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/camera_control.h
+[4.594s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__functions.h
+[4.603s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__struct.h
+[4.614s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__type_support.h
+[4.626s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__functions.h
+[4.638s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__struct.h
+[4.651s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__type_support.h
+[4.661s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/image_meta_data.h
+[4.671s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_generator_c__visibility_control.h
+[4.681s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/library_path.sh
+[4.694s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/library_path.dsv
+[4.704s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__rosidl_typesupport_fastrtps_c.h
+[4.716s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__rosidl_typesupport_fastrtps_c.h
+[4.729s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.741s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/camera_control.hpp
+[4.752s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__builder.hpp
+[4.763s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__struct.hpp
+[4.774s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__traits.hpp
+[4.785s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__type_support.hpp
+[4.794s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__builder.hpp
+[4.804s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__struct.hpp
+[4.816s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__traits.hpp
+[4.825s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__type_support.hpp
+[4.836s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/image_meta_data.hpp
+[4.848s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.858s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__rosidl_typesupport_fastrtps_cpp.hpp
+[4.868s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__rosidl_typesupport_fastrtps_cpp.hpp
+[4.880s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.892s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__rosidl_typesupport_introspection_c.h
+[4.904s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__rosidl_typesupport_introspection_c.h
+[4.913s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.923s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__rosidl_typesupport_introspection_cpp.hpp
+[4.934s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__rosidl_typesupport_introspection_cpp.hpp
+[4.940s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/pythonpath.sh
+[4.948s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/pythonpath.dsv
+[4.958s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs-2.0.8-py3.12.egg-info/PKG-INFO
+[4.969s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs-2.0.8-py3.12.egg-info/SOURCES.txt
+[4.980s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs-2.0.8-py3.12.egg-info/dependency_links.txt
+[4.990s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs-2.0.8-py3.12.egg-info/top_level.txt
+[5.004s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/__init__.py
+[5.015s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_c.c
+[5.026s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.038s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[5.049s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_c.so
+[5.061s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_fastrtps_c.so
+[5.072s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_introspection_c.so
+[5.084s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/__init__.py
+[5.094s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/_camera_control.py
+[5.101s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/_camera_control_s.c
+[5.107s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/_image_meta_data.py
+[5.120s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/_image_meta_data_s.c
+[5.131s] -- Up-to-date symlink: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_fastrtps_c.so
+[5.132s] -- Up-to-date symlink: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_introspection_c.so
+[5.132s] -- Up-to-date symlink: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_c.so
+[5.132s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/msg/ImageMetaData.idl
+[5.144s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/msg/CameraControl.idl
+[5.156s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/msg/ImageMetaData.msg
+[5.166s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/msg/CameraControl.msg
+[5.177s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/ament_index/resource_index/package_run_dependencies/flir_camera_msgs
+[5.182s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/ament_index/resource_index/parent_prefix_path/flir_camera_msgs
+[5.189s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/ament_prefix_path.sh
+[5.198s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/ament_prefix_path.dsv
+[5.209s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/path.sh
+[5.222s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/path.dsv
+[5.231s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/local_setup.bash
+[5.243s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/local_setup.sh
+[5.252s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/local_setup.zsh
+[5.264s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/local_setup.dsv
+[5.273s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/package.dsv
+[5.282s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/ament_index/resource_index/packages/flir_camera_msgs
+[5.291s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/rosidl_cmake-extras.cmake
+[5.298s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.305s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.312s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[5.319s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[5.323s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.328s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.335s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgsConfig.cmake
+[5.341s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgsConfig-version.cmake
+[5.346s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/package.xml
+[5.351s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_generator_c.so
+[5.351s] -- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_generator_c.so" to ""
+[5.351s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_fastrtps_c.so
+[5.351s] -- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[5.351s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_fastrtps_cpp.so
+[5.351s] -- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.352s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_introspection_c.so
+[5.352s] -- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_introspection_c.so" to ""
+[5.352s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_c.so
+[5.352s] -- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_c.so" to ""
+[5.352s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_introspection_cpp.so
+[5.352s] -- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[5.352s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_cpp.so
+[5.352s] -- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_cpp.so" to ""
+[5.388s] Listing '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs'...
+[5.388s] Compiling '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/__init__.py'...
+[5.388s] Listing '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg'...
+[5.388s] Compiling '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/__init__.py'...
+[5.388s] Compiling '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/_camera_control.py'...
+[5.388s] Compiling '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/_image_meta_data.py'...
+[5.391s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_generator_py.so
+[5.391s] -- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_generator_py.so" to ""
+[5.391s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_cExport.cmake
+[5.391s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_cExport-relwithdebinfo.cmake
+[5.391s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[5.391s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_typesupport_fastrtps_cExport-relwithdebinfo.cmake
+[5.391s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_cppExport.cmake
+[5.391s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.391s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_typesupport_fastrtps_cppExport-relwithdebinfo.cmake
+[5.392s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_introspection_cExport.cmake
+[5.392s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_introspection_cExport-relwithdebinfo.cmake
+[5.392s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_cExport.cmake
+[5.392s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_cExport-relwithdebinfo.cmake
+[5.392s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[5.392s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_introspection_cppExport-relwithdebinfo.cmake
+[5.392s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_cppExport.cmake
+[5.392s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_cppExport-relwithdebinfo.cmake
+[5.392s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_pyExport.cmake
+[5.392s] -- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_pyExport-relwithdebinfo.cmake
+[5.393s] Invoked command in '/home/brian-zheng/spinnaker/build/flir_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/brian-zheng/spinnaker/build/flir_camera_msgs

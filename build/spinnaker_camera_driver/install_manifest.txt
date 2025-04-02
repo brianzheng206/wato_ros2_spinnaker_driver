@@ -1,0 +1,3 @@
+/home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/libcamera_driver.so
+/home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverTargets.cmake
+/home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverTargets-relwithdebinfo.cmake

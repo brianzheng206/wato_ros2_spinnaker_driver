@@ -1,0 +1,19 @@
+# Property Configurator for Spinnaker library
+
+# Root category logging priority and appender is used if individual categories are not configured
+# Note: Multiple appenders can be attached to the same category
+log4cpp.rootCategory=ERROR, SpinnakerFileAppender
+log4cpp.category.SpinnakerConsole=FATAL, SpinnakerConsoleAppender
+log4cpp.category.Spinnaker=ERROR, SpinnakerFileAppender
+
+log4cpp.appender.SpinnakerConsoleAppender=ConsoleAppender
+log4cpp.appender.SpinnakerConsoleAppender.layout=PatternLayout
+log4cpp.appender.SpinnakerConsoleAppender.layout.ConversionPattern=[%p %c] %d [%t] %m%n
+
+log4cpp.appender.SpinnakerFileAppender=RollingFileAppender
+log4cpp.appender.SpinnakerFileAppender.fileName=${HOME}/.config/spinnaker/logs/Spinnaker.log
+log4cpp.appender.SpinnakerFileAppender.append=true
+log4cpp.appender.SpinnakerFileAppender.maxFileSize=1000000
+log4cpp.appender.SpinnakerFileAppender.maxBackupIndex=5
+log4cpp.appender.SpinnakerFileAppender.layout=PatternLayout
+log4cpp.appender.SpinnakerFileAppender.layout.ConversionPattern=[%p %c] %d [%t] %m%n

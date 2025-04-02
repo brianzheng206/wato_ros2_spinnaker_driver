@@ -1,0 +1,11 @@
+/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver/CMakeFiles/uninstall.dir
+/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver/CMakeFiles/spinnaker_synchronized_camera_driver_uninstall.dir
+/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver/CMakeFiles/synchronized_camera_driver.dir
+/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver/CMakeFiles/synchronized_camera_driver_node.dir
+/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver/CMakeFiles/test.dir
+/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver/CMakeFiles/edit_cache.dir
+/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver/CMakeFiles/rebuild_cache.dir
+/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver/CMakeFiles/list_install_components.dir
+/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver/CMakeFiles/install.dir
+/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver/CMakeFiles/install/local.dir
+/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver/CMakeFiles/install/strip.dir

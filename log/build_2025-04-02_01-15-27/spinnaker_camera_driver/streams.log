@@ -1,0 +1,155 @@
+[0.007s] Invoking command in '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver': AMENT_PREFIX_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/brian-zheng/spinnaker/src/flir_camera_driver/spinnaker_camera_driver -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/brian-zheng/spinnaker/install/spinnaker_camera_driver
+[0.055s] -- The C compiler identification is GNU 13.3.0
+[0.113s] -- The CXX compiler identification is GNU 13.3.0
+[0.133s] -- Detecting C compiler ABI info
+[0.246s] -- Detecting C compiler ABI info - done
+[0.253s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.253s] -- Detecting C compile features
+[0.253s] -- Detecting C compile features - done
+[0.266s] -- Detecting CXX compiler ABI info
+[0.381s] -- Detecting CXX compiler ABI info - done
+[0.386s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.386s] -- Detecting CXX compile features
+[0.386s] -- Detecting CXX compile features - done
+[0.389s] -- Found inc dir: SPINNAKER_INCLUDE_DIRS-NOTFOUND
+[0.389s] -- Found variable: FALSE at SPINNAKER_LIBRARIES-NOTFOUND and SPINNAKER_INCLUDE_DIRS-NOTFOUND
+[0.389s] -- spinnaker not found
+[0.389s] -- libSpinnaker not found in system library path
+[0.456s] -- Running download_spinnaker script with arguments: x86_64 /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/usr/lib noble
+[7.672s] -- PROCESS RESULT: CPU architecture is %s x86_64
+[7.672s] OS code name is %s noble
+[7.672s] Destination folder is %s /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/usr/lib
+[7.672s] Downloading SDK archive from https://pfrommer.us/Spinnaker/Ubuntu24.04/spinnaker-4.0.0.116-amd64-pkg-24.04.tar.gz...
+[7.672s] Unpacking tarball.
+[7.672s] Unpacking debs.
+[7.672s] Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/spinnaker-doc_4.0.0.116_amd64.deb
+[7.672s] Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/libspinnaker-c_4.0.0.116_amd64.deb
+[7.672s] Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/libgentl_4.0.0.116_amd64.deb
+[7.672s] Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/libspinnaker-c-dev_4.0.0.116_amd64.deb
+[7.672s] Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/spinnaker_4.0.0.116_amd64.deb
+[7.672s] Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/libspinnaker_4.0.0.116_amd64.deb
+[7.672s] Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/libspinnaker-dev_4.0.0.116_amd64.deb
+[7.672s] Copying libraries to /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/usr/lib
+[7.672s] Copying: libSpinnaker_C.so
+[7.672s] Copying: libSpinnaker_C.so.4.0.0.116
+[7.672s] Copying: libSpinnaker.so
+[7.672s] Copying: libSpinnaker.so.4
+[7.672s] Copying: libSpinnaker_C.so.4
+[7.672s] Copying: libSpinnaker.so.4.0.0.116
+[7.672s] Copying: libGCBase_gcc11_v3_0.so
+[7.672s] Copying: libGenApi_gcc11_v3_0.so
+[7.672s] Copying: libXmlParser_gcc11_v3_0.so
+[7.672s] Copying: libMathParser_gcc11_v3_0.so
+[7.672s] Copying: libLog_gcc11_v3_0.so
+[7.672s] Copying: libNodeMapData_gcc11_v3_0.so
+[7.672s] 
+[7.672s] -- libSpinnaker library location: /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/usr/lib/libSpinnaker.so
+[7.672s] -- libSpinnaker include location: /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/opt/spinnaker/include
+[7.672s] -- Found inc dir: /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/opt/spinnaker/include
+[7.672s] -- Found SPINNAKER: /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/opt/spinnaker/include  
+[7.673s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[7.785s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.830s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[7.846s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[7.859s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[7.885s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[7.892s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[7.900s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.910s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.962s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[7.964s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[8.056s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[8.075s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[8.090s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.147s] -- Found rclcpp_components: 28.1.6 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[8.172s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[8.215s] -- Found camera_info_manager: 5.1.5 (/opt/ros/jazzy/share/camera_info_manager/cmake)
+[8.218s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[8.245s] -- Found image_transport: 5.1.5 (/opt/ros/jazzy/share/image_transport/cmake)
+[8.254s] -- Found flir_camera_msgs: 2.0.8 (/home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake)
+[8.268s] -- installing spinnaker libraries from /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/opt/spinnaker/lib
+[8.270s] -- Found ament_cmake_copyright: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_copyright/cmake)
+[8.271s] -- Found ament_cmake_cppcheck: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)
+[8.272s] -- Found ament_cmake_cpplint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)
+[8.272s] -- Found ament_cmake_flake8: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)
+[8.273s] -- Found ament_cmake_lint_cmake: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_lint_cmake/cmake)
+[8.274s] -- Found ament_cmake_pep257: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)
+[8.275s] -- Found ament_cmake_clang_format: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_clang_format/cmake)
+[8.276s] -- Found ament_cmake_xmllint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_xmllint/cmake)
+[8.338s] -- Configuring done (8.3s)
+[8.351s] -- Generating done (0.0s)
+[8.354s] -- Build files have been written to: /home/brian-zheng/spinnaker/build/spinnaker_camera_driver
+[8.361s] Invoked command in '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver' returned '0': AMENT_PREFIX_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/brian-zheng/spinnaker/src/flir_camera_driver/spinnaker_camera_driver -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/brian-zheng/spinnaker/install/spinnaker_camera_driver
+[8.361s] Invoking command in '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver': AMENT_PREFIX_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/brian-zheng/spinnaker/build/spinnaker_camera_driver -- -j20 -l20
+[8.410s] [ 20%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/spinnaker_wrapper_impl.cpp.o[0m
+[8.410s] [ 20%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/pixel_format.cpp.o[0m
+[8.410s] [ 30%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/genicam_utils.cpp.o[0m
+[8.410s] [ 40%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o[0m
+[8.411s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/spinnaker_wrapper.cpp.o[0m
+[8.412s] [ 60%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/camera.cpp.o[0m
+[8.412s] [ 70%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/image.cpp.o[0m
+[21.581s] [ 80%] [32m[1mLinking CXX shared library libcamera_driver.so[0m
+[21.901s] [ 80%] Built target camera_driver
+[21.917s] [ 90%] [32mBuilding CXX object CMakeFiles/camera_driver_node.dir/src/camera_driver_node.cpp.o[0m
+[23.984s] [100%] [32m[1mLinking CXX executable camera_driver_node[0m
+[24.105s] [100%] Built target camera_driver_node
+[24.114s] Invoked command in '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver' returned '0': AMENT_PREFIX_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/brian-zheng/spinnaker/build/spinnaker_camera_driver -- -j20 -l20
+[24.115s] Invoking command in '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver': AMENT_PREFIX_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/brian-zheng/spinnaker/build/spinnaker_camera_driver
+[24.121s] -- Install configuration: "RelWithDebInfo"
+[24.121s] -- Execute custom install script
+[24.121s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libGCBase_gcc11_v3_0.so
+[24.128s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libGenApi_gcc11_v3_0.so
+[24.133s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libLog_gcc11_v3_0.so
+[24.140s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libMathParser_gcc11_v3_0.so
+[24.146s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libNodeMapData_gcc11_v3_0.so
+[24.153s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libSpinnaker.so
+[24.160s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libSpinnaker.so.4
+[24.166s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libSpinnaker.so.4.0.0.116
+[24.172s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libSpinnaker_C.so
+[24.180s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libSpinnaker_C.so.4
+[24.185s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libSpinnaker_C.so.4.0.0.116
+[24.190s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libXmlParser_gcc11_v3_0.so
+[24.196s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/liblog4cpp_gcc11_v3_0.so
+[24.202s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/spinnaker-gentl/Spinnaker_GenTL.cti
+[24.207s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/spinnaker-gentl/log4cpp.gentl.property
+[24.215s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/spinnaker_camera_driver//camera_driver_node
+[24.220s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverConfig.cmake
+[24.226s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverConfigVersion.cmake
+[24.234s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/camera.hpp
+[24.239s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/camera_driver.hpp
+[24.245s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/exposure_controller.hpp
+[24.251s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/image.hpp
+[24.257s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/logging.hpp
+[24.263s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/pixel_format.hpp
+[24.269s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/spinnaker_wrapper.hpp
+[24.274s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/synchronizer.hpp
+[24.281s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/blackfly.yaml
+[24.288s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/blackfly_s.yaml
+[24.293s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/chameleon.yaml
+[24.299s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/flir_ax5.yaml
+[24.305s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/grasshopper.yaml
+[24.312s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/oryx.yaml
+[24.318s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//launch/driver_node.launch.py
+[24.324s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//launch/multiple_cameras.launch.py
+[24.330s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/spinnaker_camera_driver/linux_setup_flir
+[24.337s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/ament_index/resource_index/package_run_dependencies/spinnaker_camera_driver
+[24.343s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/ament_index/resource_index/parent_prefix_path/spinnaker_camera_driver
+[24.350s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/ament_prefix_path.sh
+[24.357s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/ament_prefix_path.dsv
+[24.362s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/path.sh
+[24.368s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/path.dsv
+[24.375s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.bash
+[24.382s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.sh
+[24.387s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.zsh
+[24.393s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.dsv
+[24.399s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/package.dsv
+[24.405s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/ament_index/resource_index/packages/spinnaker_camera_driver
+[24.410s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/ament_index/resource_index/rclcpp_components/spinnaker_camera_driver
+[24.417s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/cmake/spinnaker_camera_driverConfig.cmake
+[24.425s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/cmake/spinnaker_camera_driverConfig-version.cmake
+[24.431s] -- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/package.xml
+[24.437s] -- Installing: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/libcamera_driver.so
+[24.445s] -- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/libcamera_driver.so" to ""
+[24.445s] -- Installing: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverTargets.cmake
+[24.445s] -- Installing: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverTargets-relwithdebinfo.cmake
+[24.447s] Invoked command in '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver' returned '0': AMENT_PREFIX_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/brian-zheng/spinnaker/build/spinnaker_camera_driver

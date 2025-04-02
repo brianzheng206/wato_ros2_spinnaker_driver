@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Spinnaker Download
+Icon=/usr/share/pixmaps/spinnaker-doc.ico
+Exec=xdg-open https://www.flir.com/support-center/iis/machine-vision/downloads/spinnaker-sdk-and-firmware-download/
+Terminal=false
+Type=Application
+StartupNotify=false

@@ -1,0 +1,1 @@
+/home/brian-zheng/spinnaker/build/flir_camera_msgs/rosidl_generator_cpp/flir_camera_msgs/msg/detail/camera_control__type_support.hpp

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-6ec886ba5aadb8bc4a96.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "spinnaker_synchronized_camera_driver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "spinnaker_synchronized_camera_driver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-spinnaker_synchronized_camera_driver_uninstall-RelWithDebInfo-a600c57c8c730f6b53eb.json",
+					"name" : "spinnaker_synchronized_camera_driver_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synchronized_camera_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synchronized_camera_driver-RelWithDebInfo-6ff0f3006c7bf0262a7e.json",
+					"name" : "synchronized_camera_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synchronized_camera_driver_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synchronized_camera_driver_node-RelWithDebInfo-404f93fc184e2e451b08.json",
+					"name" : "synchronized_camera_driver_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-36fddbe5d750c31e5311.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver",
+		"source" : "/home/brian-zheng/spinnaker/src/flir_camera_driver/spinnaker_synchronized_camera_driver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

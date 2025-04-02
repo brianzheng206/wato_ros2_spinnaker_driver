@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver/synchronized_camera_driver_node" "TARGETS" "synchronized_camera_driver_node" "DESTINATION" "lib/spinnaker_synchronized_camera_driver/")

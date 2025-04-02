@@ -1,0 +1,79 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 28.1.6 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+-- Found camera_info_manager: 5.1.5 (/opt/ros/jazzy/share/camera_info_manager/cmake)
+-- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+-- Found image_transport: 5.1.5 (/opt/ros/jazzy/share/image_transport/cmake)
+-- Found flir_camera_msgs: 2.0.8 (/home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake)
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- 
+ Properties for TARGET spinnaker_camera_driver::camera_driver:
+   spinnaker_camera_driver::camera_driver.INTERFACE_INCLUDE_DIRECTORIES = "/home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include;/home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include"
+
+-- Found ament_cmake_copyright: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_copyright/cmake)
+-- Found ament_cmake_cppcheck: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)
+-- Found ament_cmake_cpplint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)
+-- Found ament_cmake_flake8: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)
+-- Found ament_cmake_lint_cmake: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_lint_cmake/cmake)
+-- Found ament_cmake_pep257: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)
+-- Found ament_cmake_clang_format: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_clang_format/cmake)
+-- Found ament_cmake_xmllint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_xmllint/cmake)
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver
+[ 22%] [32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/master_exposure_controller.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/follower_exposure_controller.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/exposure_controller_factory.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/time_keeper.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/time_estimator.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/synchronized_camera_driver.cpp.o[0m
+[ 77%] [32m[1mLinking CXX shared library libsynchronized_camera_driver.so[0m
+[ 77%] Built target synchronized_camera_driver
+[ 88%] [32mBuilding CXX object CMakeFiles/synchronized_camera_driver_node.dir/src/synchronized_camera_driver_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable synchronized_camera_driver_node[0m
+[100%] Built target synchronized_camera_driver_node
+-- Install configuration: "RelWithDebInfo"
+-- Execute custom install script
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/lib/spinnaker_synchronized_camera_driver//synchronized_camera_driver_node
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/lib/libsynchronized_camera_driver.so
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver//launch/follower_example.launch.py
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver//launch/master_example.launch.py
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver//launch/primary_secondary.launch.py
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/ament_index/resource_index/package_run_dependencies/spinnaker_synchronized_camera_driver
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/ament_index/resource_index/parent_prefix_path/spinnaker_synchronized_camera_driver
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/environment/ament_prefix_path.sh
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/environment/ament_prefix_path.dsv
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/environment/path.sh
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/environment/path.dsv
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/local_setup.bash
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/local_setup.sh
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/local_setup.zsh
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/local_setup.dsv
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/package.dsv
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/ament_index/resource_index/packages/spinnaker_synchronized_camera_driver
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/ament_index/resource_index/rclcpp_components/spinnaker_synchronized_camera_driver
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/cmake/spinnaker_synchronized_camera_driverConfig.cmake
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/cmake/spinnaker_synchronized_camera_driverConfig-version.cmake
+-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/package.xml

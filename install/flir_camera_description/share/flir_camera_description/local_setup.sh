@@ -1,0 +1,1 @@
+/home/brian-zheng/spinnaker/build/flir_camera_description/ament_cmake_environment_hooks/local_setup.sh

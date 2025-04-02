@@ -1,0 +1,1 @@
+/home/brian-zheng/spinnaker/src/flir_camera_driver/spinnaker_camera_driver/include/spinnaker_camera_driver/spinnaker_wrapper.hpp

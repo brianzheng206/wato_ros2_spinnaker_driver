@@ -1,0 +1,58 @@
+[0.005s] Invoking command in '/home/brian-zheng/spinnaker/build/flir_camera_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/brian-zheng/spinnaker/src/flir_camera_driver/flir_camera_description -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/brian-zheng/spinnaker/install/flir_camera_description
+[0.194s] -- The C compiler identification is GNU 13.3.0
+[0.325s] -- The CXX compiler identification is GNU 13.3.0
+[0.344s] -- Detecting C compiler ABI info
+[0.461s] -- Detecting C compiler ABI info - done
+[0.467s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.467s] -- Detecting C compile features
+[0.468s] -- Detecting C compile features - done
+[0.475s] -- Detecting CXX compiler ABI info
+[0.582s] -- Detecting CXX compiler ABI info - done
+[0.587s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.587s] -- Detecting CXX compile features
+[0.587s] -- Detecting CXX compile features - done
+[0.592s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.700s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.748s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.772s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.841s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.842s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.842s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.843s] -- Added test 'lint_cmake' to check CMake code style
+[0.843s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.844s] -- Added test 'xmllint' to check XML markup files
+[0.845s] -- Configuring done (0.8s)
+[0.846s] -- Generating done (0.0s)
+[0.846s] [33mCMake Warning:
+[0.846s]   Manually-specified variables were not used by the project:
+[0.847s] 
+[0.847s]     CMAKE_EXPORT_COMPILE_COMMANDS
+[0.847s] 
+[0.847s] [0m
+[0.847s] -- Build files have been written to: /home/brian-zheng/spinnaker/build/flir_camera_description
+[0.850s] Invoked command in '/home/brian-zheng/spinnaker/build/flir_camera_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/brian-zheng/spinnaker/src/flir_camera_driver/flir_camera_description -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/brian-zheng/spinnaker/install/flir_camera_description
+[0.851s] Invoking command in '/home/brian-zheng/spinnaker/build/flir_camera_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/brian-zheng/spinnaker/build/flir_camera_description -- -j20 -l20
+[0.880s] Invoked command in '/home/brian-zheng/spinnaker/build/flir_camera_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/brian-zheng/spinnaker/build/flir_camera_description -- -j20 -l20
+[0.888s] Invoking command in '/home/brian-zheng/spinnaker/build/flir_camera_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/brian-zheng/spinnaker/build/flir_camera_description
+[0.894s] -- Install configuration: "RelWithDebInfo"
+[0.895s] -- Execute custom install script
+[0.895s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/launch/demo.launch.py
+[0.902s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/meshes/flir_blackfly_s.stl
+[0.910s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/urdf/demo.urdf.xacro
+[0.917s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/urdf/flir_blackfly_s.urdf.xacro
+[0.922s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/ament_index/resource_index/package_run_dependencies/flir_camera_description
+[0.928s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/ament_index/resource_index/parent_prefix_path/flir_camera_description
+[0.934s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/environment/ament_prefix_path.sh
+[0.941s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/environment/ament_prefix_path.dsv
+[0.946s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/environment/path.sh
+[0.952s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/environment/path.dsv
+[0.957s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/local_setup.bash
+[0.963s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/local_setup.sh
+[0.973s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/local_setup.zsh
+[0.979s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/local_setup.dsv
+[0.984s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/package.dsv
+[0.990s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/ament_index/resource_index/packages/flir_camera_description
+[0.996s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/cmake/flir_camera_descriptionConfig.cmake
+[1.002s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/cmake/flir_camera_descriptionConfig-version.cmake
+[1.008s] -- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/package.xml
+[1.016s] Invoked command in '/home/brian-zheng/spinnaker/build/flir_camera_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/brian-zheng/spinnaker/build/flir_camera_description

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Spinnaker Examples
+TryExec=konqueror
+Exec=konqueror /opt/spinnaker/src
+Icon=/usr/share/pixmaps/spinnaker.ico
+Terminal=false"
+Type=Application
+StartupNotify=false

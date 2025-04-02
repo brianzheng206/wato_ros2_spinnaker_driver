@@ -1,0 +1,936 @@
+[0.000000] (-) TimerEvent: {}
+[0.000439] (flir_camera_description) JobQueued: {'identifier': 'flir_camera_description', 'dependencies': OrderedDict()}
+[0.000472] (flir_camera_msgs) JobQueued: {'identifier': 'flir_camera_msgs', 'dependencies': OrderedDict()}
+[0.000492] (spinnaker_camera_driver) JobQueued: {'identifier': 'spinnaker_camera_driver', 'dependencies': OrderedDict({'flir_camera_msgs': '/home/brian-zheng/spinnaker/install/flir_camera_msgs'})}
+[0.000512] (spinnaker_synchronized_camera_driver) JobQueued: {'identifier': 'spinnaker_synchronized_camera_driver', 'dependencies': OrderedDict({'flir_camera_msgs': '/home/brian-zheng/spinnaker/install/flir_camera_msgs', 'spinnaker_camera_driver': '/home/brian-zheng/spinnaker/install/spinnaker_camera_driver'})}
+[0.000531] (flir_camera_msgs) JobStarted: {'identifier': 'flir_camera_msgs'}
+[0.005755] (flir_camera_description) JobStarted: {'identifier': 'flir_camera_description'}
+[0.007613] (flir_camera_msgs) JobProgress: {'identifier': 'flir_camera_msgs', 'progress': 'cmake'}
+[0.007908] (flir_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/brian-zheng/spinnaker/src/flir_camera_driver/flir_camera_msgs', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/brian-zheng/spinnaker/install/flir_camera_msgs'], 'cwd': '/home/brian-zheng/spinnaker/build/flir_camera_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'brian-zheng', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/brian-zheng', 'OLDPWD': '/home/brian-zheng/spinnaker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2985', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'brian-zheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'brian-zheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/brian-zheng-Predator-PHN16-71:@/tmp/.ICE-unix/2930,unix/brian-zheng-Predator-PHN16-71:/tmp/.ICE-unix/2930', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/732eaf36_4cb7_42d0_9aa3_01fc900bce45', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/brian-zheng/spinnaker/build/flir_camera_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.010302] (flir_camera_description) JobProgress: {'identifier': 'flir_camera_description', 'progress': 'cmake'}
+[0.010574] (flir_camera_description) Command: {'cmd': ['/usr/bin/cmake', '/home/brian-zheng/spinnaker/src/flir_camera_driver/flir_camera_description', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/brian-zheng/spinnaker/install/flir_camera_description'], 'cwd': '/home/brian-zheng/spinnaker/build/flir_camera_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'brian-zheng', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/brian-zheng', 'OLDPWD': '/home/brian-zheng/spinnaker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2985', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'brian-zheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'brian-zheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/brian-zheng-Predator-PHN16-71:@/tmp/.ICE-unix/2930,unix/brian-zheng-Predator-PHN16-71:/tmp/.ICE-unix/2930', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/732eaf36_4cb7_42d0_9aa3_01fc900bce45', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/brian-zheng/spinnaker/build/flir_camera_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.100004] (-) TimerEvent: {}
+[0.199910] (flir_camera_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.200092] (-) TimerEvent: {}
+[0.200208] (flir_camera_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.300254] (-) TimerEvent: {}
+[0.331105] (flir_camera_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.331280] (flir_camera_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.349437] (flir_camera_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.349599] (flir_camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400446] (-) TimerEvent: {}
+[0.466399] (flir_camera_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.466551] (flir_camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.472403] (flir_camera_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.472915] (flir_camera_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.473055] (flir_camera_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.473197] (flir_camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.473268] (flir_camera_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.473337] (flir_camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.480531] (flir_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.480693] (flir_camera_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500599] (-) TimerEvent: {}
+[0.587136] (flir_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.587310] (flir_camera_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.592635] (flir_camera_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.592799] (flir_camera_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.592885] (flir_camera_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.593132] (flir_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.593212] (flir_camera_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.593394] (flir_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.597696] (flir_camera_description) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.597905] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.600667] (-) TimerEvent: {}
+[0.700948] (-) TimerEvent: {}
+[0.705239] (flir_camera_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.711244] (flir_camera_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.753776] (flir_camera_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.756876] (flir_camera_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.777717] (flir_camera_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.778029] (flir_camera_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.0.2 (/opt/ros/jazzy/share/builtin_interfaces/cmake)\n'}
+[0.801135] (-) TimerEvent: {}
+[0.810667] (flir_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.819253] (flir_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.830686] (flir_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.842803] (flir_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.846595] (flir_camera_description) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.847890] (flir_camera_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.848061] (flir_camera_description) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[0.848263] (flir_camera_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.848739] (flir_camera_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.849345] (flir_camera_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.850305] (flir_camera_description) StdoutLine: {'line': b'-- Configuring done (0.8s)\n'}
+[0.851690] (flir_camera_description) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.852046] (flir_camera_description) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[0.852165] (flir_camera_description) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[0.852242] (flir_camera_description) StderrLine: {'line': b'\n'}
+[0.852309] (flir_camera_description) StderrLine: {'line': b'    CMAKE_EXPORT_COMPILE_COMMANDS\n'}
+[0.852375] (flir_camera_description) StderrLine: {'line': b'\n'}
+[0.852452] (flir_camera_description) StderrLine: {'line': b'\x1b[0m\n'}
+[0.852803] (flir_camera_description) StdoutLine: {'line': b'-- Build files have been written to: /home/brian-zheng/spinnaker/build/flir_camera_description\n'}
+[0.853402] (flir_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.856083] (flir_camera_description) CommandEnded: {'returncode': 0}
+[0.856792] (flir_camera_description) JobProgress: {'identifier': 'flir_camera_description', 'progress': 'build'}
+[0.856816] (flir_camera_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/brian-zheng/spinnaker/build/flir_camera_description', '--', '-j20', '-l20'], 'cwd': '/home/brian-zheng/spinnaker/build/flir_camera_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'brian-zheng', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/brian-zheng', 'OLDPWD': '/home/brian-zheng/spinnaker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2985', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'brian-zheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'brian-zheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/brian-zheng-Predator-PHN16-71:@/tmp/.ICE-unix/2930,unix/brian-zheng-Predator-PHN16-71:/tmp/.ICE-unix/2930', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/732eaf36_4cb7_42d0_9aa3_01fc900bce45', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/brian-zheng/spinnaker/build/flir_camera_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.862169] (flir_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.864712] (flir_camera_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.885712] (flir_camera_description) CommandEnded: {'returncode': 0}
+[0.886092] (flir_camera_description) JobProgress: {'identifier': 'flir_camera_description', 'progress': 'install'}
+[0.893639] (flir_camera_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/brian-zheng/spinnaker/build/flir_camera_description'], 'cwd': '/home/brian-zheng/spinnaker/build/flir_camera_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'brian-zheng', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/brian-zheng', 'OLDPWD': '/home/brian-zheng/spinnaker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2985', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'brian-zheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'brian-zheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/brian-zheng-Predator-PHN16-71:@/tmp/.ICE-unix/2930,unix/brian-zheng-Predator-PHN16-71:/tmp/.ICE-unix/2930', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/732eaf36_4cb7_42d0_9aa3_01fc900bce45', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/brian-zheng/spinnaker/build/flir_camera_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.900083] (flir_camera_description) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[0.900271] (flir_camera_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.900665] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/launch/demo.launch.py\n'}
+[0.901232] (-) TimerEvent: {}
+[0.908131] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/meshes/flir_blackfly_s.stl\n'}
+[0.915267] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/urdf/demo.urdf.xacro\n'}
+[0.922244] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/urdf/flir_blackfly_s.urdf.xacro\n'}
+[0.927882] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/ament_index/resource_index/package_run_dependencies/flir_camera_description\n'}
+[0.934009] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/ament_index/resource_index/parent_prefix_path/flir_camera_description\n'}
+[0.940196] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/environment/ament_prefix_path.sh\n'}
+[0.946754] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/environment/ament_prefix_path.dsv\n'}
+[0.951808] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/environment/path.sh\n'}
+[0.957352] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/environment/path.dsv\n'}
+[0.962379] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/local_setup.bash\n'}
+[0.968666] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/local_setup.sh\n'}
+[0.978225] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/local_setup.zsh\n'}
+[0.984710] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/local_setup.dsv\n'}
+[0.990142] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/package.dsv\n'}
+[0.995426] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/ament_index/resource_index/packages/flir_camera_description\n'}
+[1.001443] (-) TimerEvent: {}
+[1.001701] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/cmake/flir_camera_descriptionConfig.cmake\n'}
+[1.007848] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/cmake/flir_camera_descriptionConfig-version.cmake\n'}
+[1.014114] (flir_camera_description) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_description/share/flir_camera_description/package.xml\n'}
+[1.021317] (flir_camera_description) CommandEnded: {'returncode': 0}
+[1.031956] (flir_camera_description) JobEnded: {'identifier': 'flir_camera_description', 'rc': 0}
+[1.101559] (-) TimerEvent: {}
+[1.201835] (-) TimerEvent: {}
+[1.302109] (-) TimerEvent: {}
+[1.314360] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)\n'}
+[1.316306] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)\n'}
+[1.318611] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_uncrustify/cmake)\n'}
+[1.322172] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.402218] (-) TimerEvent: {}
+[1.502485] (-) TimerEvent: {}
+[1.602722] (-) TimerEvent: {}
+[1.702966] (-) TimerEvent: {}
+[1.803284] (-) TimerEvent: {}
+[1.903538] (-) TimerEvent: {}
+[1.949944] (flir_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.003665] (-) TimerEvent: {}
+[2.103931] (-) TimerEvent: {}
+[2.185605] (flir_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.192043] (flir_camera_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.204157] (-) TimerEvent: {}
+[2.304593] (-) TimerEvent: {}
+[2.311641] (flir_camera_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[2.404788] (-) TimerEvent: {}
+[2.505134] (-) TimerEvent: {}
+[2.600713] (flir_camera_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[2.605320] (-) TimerEvent: {}
+[2.636692] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)\n'}
+[2.638230] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)\n'}
+[2.640200] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_copyright: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_copyright/cmake)\n'}
+[2.641058] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_lint_cmake: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_lint_cmake/cmake)\n'}
+[2.642003] (flir_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_xmllint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_xmllint/cmake)\n'}
+[2.648480] (flir_camera_msgs) StdoutLine: {'line': b'-- Configuring done (2.6s)\n'}
+[2.668389] (flir_camera_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.674193] (flir_camera_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/brian-zheng/spinnaker/build/flir_camera_msgs\n'}
+[2.681088] (flir_camera_msgs) CommandEnded: {'returncode': 0}
+[2.681619] (flir_camera_msgs) JobProgress: {'identifier': 'flir_camera_msgs', 'progress': 'build'}
+[2.681633] (flir_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/brian-zheng/spinnaker/build/flir_camera_msgs', '--', '-j20', '-l20'], 'cwd': '/home/brian-zheng/spinnaker/build/flir_camera_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'brian-zheng', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/brian-zheng', 'OLDPWD': '/home/brian-zheng/spinnaker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2985', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'brian-zheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'brian-zheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/brian-zheng-Predator-PHN16-71:@/tmp/.ICE-unix/2930,unix/brian-zheng-Predator-PHN16-71:/tmp/.ICE-unix/2930', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/732eaf36_4cb7_42d0_9aa3_01fc900bce45', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/brian-zheng/spinnaker/build/flir_camera_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[2.705548] (-) TimerEvent: {}
+[2.726026] (flir_camera_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[2.736275] (flir_camera_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_symlink_flir_camera_msgs\n'}
+[2.805753] (-) TimerEvent: {}
+[2.857073] (flir_camera_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.857565] (flir_camera_msgs) StdoutLine: {'line': b'creating flir_camera_msgs.egg-info\n'}
+[2.866822] (flir_camera_msgs) StdoutLine: {'line': b'writing flir_camera_msgs.egg-info/PKG-INFO\n'}
+[2.866978] (flir_camera_msgs) StdoutLine: {'line': b'writing dependency_links to flir_camera_msgs.egg-info/dependency_links.txt\n'}
+[2.867158] (flir_camera_msgs) StdoutLine: {'line': b'writing top-level names to flir_camera_msgs.egg-info/top_level.txt\n'}
+[2.867239] (flir_camera_msgs) StdoutLine: {'line': b"writing manifest file 'flir_camera_msgs.egg-info/SOURCES.txt'\n"}
+[2.883700] (flir_camera_msgs) StdoutLine: {'line': b'[  2%] Built target flir_camera_msgs__rosidl_generator_type_description\n'}
+[2.891867] (flir_camera_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.895770] (flir_camera_msgs) StdoutLine: {'line': b"reading manifest file 'flir_camera_msgs.egg-info/SOURCES.txt'\n"}
+[2.896017] (flir_camera_msgs) StdoutLine: {'line': b"writing manifest file 'flir_camera_msgs.egg-info/SOURCES.txt'\n"}
+[2.900329] (flir_camera_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.905893] (-) TimerEvent: {}
+[2.915875] (flir_camera_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_flir_camera_msgs_egg\n'}
+[3.006004] (-) TimerEvent: {}
+[3.089299] (flir_camera_msgs) StdoutLine: {'line': b'[  6%] Built target flir_camera_msgs__cpp\n'}
+[3.106249] (-) TimerEvent: {}
+[3.110807] (flir_camera_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/camera_control__functions.c.o\x1b[0m\n'}
+[3.111264] (flir_camera_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/camera_control__type_support.c.o\x1b[0m\n'}
+[3.113456] (flir_camera_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/image_meta_data__description.c.o\x1b[0m\n'}
+[3.113769] (flir_camera_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/image_meta_data__functions.c.o\x1b[0m\n'}
+[3.114238] (flir_camera_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/image_meta_data__type_support.c.o\x1b[0m\n'}
+[3.114643] (flir_camera_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/flir_camera_msgs/msg/detail/camera_control__description.c.o\x1b[0m\n'}
+[3.188112] (flir_camera_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libflir_camera_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[3.206469] (-) TimerEvent: {}
+[3.227171] (flir_camera_msgs) StdoutLine: {'line': b'[ 22%] Built target flir_camera_msgs__rosidl_generator_c\n'}
+[3.238570] (flir_camera_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.238740] (flir_camera_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.239024] (flir_camera_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.239227] (flir_camera_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.241002] (flir_camera_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.241230] (flir_camera_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.306618] (-) TimerEvent: {}
+[3.406942] (-) TimerEvent: {}
+[3.435369] (flir_camera_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/flir_camera_msgs/msg/camera_control__type_support.cpp.o\x1b[0m\n'}
+[3.435587] (flir_camera_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/flir_camera_msgs/msg/camera_control__type_support.cpp.o\x1b[0m\n'}
+[3.435766] (flir_camera_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/flir_camera_msgs/msg/image_meta_data__type_support.cpp.o\x1b[0m\n'}
+[3.437737] (flir_camera_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/flir_camera_msgs/msg/image_meta_data__type_support.cpp.o\x1b[0m\n'}
+[3.441247] (flir_camera_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/flir_camera_msgs/msg/detail/camera_control__type_support.c.o\x1b[0m\n'}
+[3.442826] (flir_camera_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/flir_camera_msgs/msg/detail/image_meta_data__type_support.cpp.o\x1b[0m\n'}
+[3.443046] (flir_camera_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/flir_camera_msgs/msg/detail/image_meta_data__type_support.c.o\x1b[0m\n'}
+[3.444772] (flir_camera_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/flir_camera_msgs/msg/detail/camera_control__type_support.cpp.o\x1b[0m\n'}
+[3.457717] (flir_camera_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/flir_camera_msgs/msg/detail/dds_fastrtps/camera_control__type_support.cpp.o\x1b[0m\n'}
+[3.457883] (flir_camera_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/flir_camera_msgs/msg/detail/dds_fastrtps/image_meta_data__type_support.cpp.o\x1b[0m\n'}
+[3.463944] (flir_camera_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/flir_camera_msgs/msg/detail/image_meta_data__type_support_c.cpp.o\x1b[0m\n'}
+[3.464110] (flir_camera_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/flir_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/flir_camera_msgs/msg/detail/camera_control__type_support_c.cpp.o\x1b[0m\n'}
+[3.478307] (flir_camera_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking C shared library libflir_camera_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.478589] (flir_camera_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.501011] (flir_camera_msgs) StdoutLine: {'line': b'[ 68%] Built target flir_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[3.507043] (-) TimerEvent: {}
+[3.510897] (flir_camera_msgs) StdoutLine: {'line': b'[ 68%] Built target flir_camera_msgs__rosidl_typesupport_c\n'}
+[3.607184] (-) TimerEvent: {}
+[3.671768] (flir_camera_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.702697] (flir_camera_msgs) StdoutLine: {'line': b'[ 70%] Built target flir_camera_msgs__rosidl_typesupport_cpp\n'}
+[3.707282] (-) TimerEvent: {}
+[3.723704] (flir_camera_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.772250] (flir_camera_msgs) StdoutLine: {'line': b'[ 72%] Built target flir_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.804304] (flir_camera_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.807484] (-) TimerEvent: {}
+[3.842719] (flir_camera_msgs) StdoutLine: {'line': b'[ 75%] Built target flir_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.894775] (flir_camera_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libflir_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.907646] (-) TimerEvent: {}
+[3.933129] (flir_camera_msgs) StdoutLine: {'line': b'[ 77%] Built target flir_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.954271] (flir_camera_msgs) StdoutLine: {'line': b'[ 77%] Built target flir_camera_msgs\n'}
+[3.972417] (flir_camera_msgs) StdoutLine: {'line': b'[ 79%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.007815] (-) TimerEvent: {}
+[4.108137] (-) TimerEvent: {}
+[4.208473] (-) TimerEvent: {}
+[4.229110] (flir_camera_msgs) StdoutLine: {'line': b'[ 79%] Built target flir_camera_msgs__py\n'}
+[4.245075] (flir_camera_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/flir_camera_msgs/msg/_image_meta_data_s.c.o\x1b[0m\n'}
+[4.245421] (flir_camera_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/flir_camera_msgs/msg/_camera_control_s.c.o\x1b[0m\n'}
+[4.308678] (-) TimerEvent: {}
+[4.367081] (flir_camera_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library libflir_camera_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[4.399168] (flir_camera_msgs) StdoutLine: {'line': b'[ 86%] Built target flir_camera_msgs__rosidl_generator_py\n'}
+[4.408794] (-) TimerEvent: {}
+[4.419545] (flir_camera_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.419897] (flir_camera_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.420785] (flir_camera_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/flir_camera_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.501083] (flir_camera_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.503506] (flir_camera_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.506958] (flir_camera_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.508864] (-) TimerEvent: {}
+[4.524201] (flir_camera_msgs) StdoutLine: {'line': b'[100%] Built target flir_camera_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[4.525715] (flir_camera_msgs) StdoutLine: {'line': b'[100%] Built target flir_camera_msgs_s__rosidl_typesupport_c\n'}
+[4.528878] (flir_camera_msgs) StdoutLine: {'line': b'[100%] Built target flir_camera_msgs_s__rosidl_typesupport_introspection_c\n'}
+[4.537742] (flir_camera_msgs) CommandEnded: {'returncode': 0}
+[4.538782] (flir_camera_msgs) JobProgress: {'identifier': 'flir_camera_msgs', 'progress': 'install'}
+[4.538816] (flir_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/brian-zheng/spinnaker/build/flir_camera_msgs'], 'cwd': '/home/brian-zheng/spinnaker/build/flir_camera_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'brian-zheng', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/brian-zheng', 'OLDPWD': '/home/brian-zheng/spinnaker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2985', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'brian-zheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'brian-zheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/brian-zheng-Predator-PHN16-71:@/tmp/.ICE-unix/2930,unix/brian-zheng-Predator-PHN16-71:/tmp/.ICE-unix/2930', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/732eaf36_4cb7_42d0_9aa3_01fc900bce45', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/brian-zheng/spinnaker/build/flir_camera_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[4.547684] (flir_camera_msgs) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[4.548675] (flir_camera_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.549044] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/flir_camera_msgs\n'}
+[4.560887] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/msg/ImageMetaData.json\n'}
+[4.570788] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/msg/CameraControl.json\n'}
+[4.581949] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/camera_control.h\n'}
+[4.594839] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__functions.h\n'}
+[4.603380] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__struct.h\n'}
+[4.609031] (-) TimerEvent: {}
+[4.614040] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__type_support.h\n'}
+[4.626538] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__functions.h\n'}
+[4.638829] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__struct.h\n'}
+[4.650964] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__type_support.h\n'}
+[4.661190] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/image_meta_data.h\n'}
+[4.671177] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.681458] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/library_path.sh\n'}
+[4.693903] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/library_path.dsv\n'}
+[4.704895] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__rosidl_typesupport_fastrtps_c.h\n'}
+[4.709197] (-) TimerEvent: {}
+[4.716727] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__rosidl_typesupport_fastrtps_c.h\n'}
+[4.729494] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.741711] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/camera_control.hpp\n'}
+[4.752482] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__builder.hpp\n'}
+[4.763480] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__struct.hpp\n'}
+[4.774332] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__traits.hpp\n'}
+[4.785081] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__type_support.hpp\n'}
+[4.794209] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__builder.hpp\n'}
+[4.804231] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__struct.hpp\n'}
+[4.809363] (-) TimerEvent: {}
+[4.815935] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__traits.hpp\n'}
+[4.825837] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__type_support.hpp\n'}
+[4.836429] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/image_meta_data.hpp\n'}
+[4.848495] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.858814] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.868637] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.880277] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.892582] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__rosidl_typesupport_introspection_c.h\n'}
+[4.904486] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__rosidl_typesupport_introspection_c.h\n'}
+[4.909515] (-) TimerEvent: {}
+[4.913278] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.923481] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/camera_control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.934041] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/include/flir_camera_msgs/flir_camera_msgs/msg/detail/image_meta_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.940165] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/pythonpath.sh\n'}
+[4.947981] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/pythonpath.dsv\n'}
+[4.958358] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs-2.0.8-py3.12.egg-info/PKG-INFO\n'}
+[4.969663] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs-2.0.8-py3.12.egg-info/SOURCES.txt\n'}
+[4.979965] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs-2.0.8-py3.12.egg-info/dependency_links.txt\n'}
+[4.990618] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs-2.0.8-py3.12.egg-info/top_level.txt\n'}
+[5.003992] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/__init__.py\n'}
+[5.009606] (-) TimerEvent: {}
+[5.015414] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[5.026634] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.038053] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/_flir_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.048999] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_c.so\n'}
+[5.061584] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.072871] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[5.084473] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/__init__.py\n'}
+[5.094463] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/_camera_control.py\n'}
+[5.101244] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/_camera_control_s.c\n'}
+[5.107032] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/_image_meta_data.py\n'}
+[5.109695] (-) TimerEvent: {}
+[5.120116] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/_image_meta_data_s.c\n'}
+[5.131829] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.132189] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[5.132502] (flir_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/flir_camera_msgs_s__rosidl_typesupport_c.so\n'}
+[5.132686] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/msg/ImageMetaData.idl\n'}
+[5.144602] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/msg/CameraControl.idl\n'}
+[5.156560] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/msg/ImageMetaData.msg\n'}
+[5.166552] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/msg/CameraControl.msg\n'}
+[5.177082] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/ament_index/resource_index/package_run_dependencies/flir_camera_msgs\n'}
+[5.182841] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/ament_index/resource_index/parent_prefix_path/flir_camera_msgs\n'}
+[5.189586] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/ament_prefix_path.sh\n'}
+[5.198821] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/ament_prefix_path.dsv\n'}
+[5.209404] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/path.sh\n'}
+[5.209765] (-) TimerEvent: {}
+[5.221964] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/environment/path.dsv\n'}
+[5.231770] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/local_setup.bash\n'}
+[5.243346] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/local_setup.sh\n'}
+[5.252491] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/local_setup.zsh\n'}
+[5.264433] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/local_setup.dsv\n'}
+[5.272949] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/package.dsv\n'}
+[5.282823] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/ament_index/resource_index/packages/flir_camera_msgs\n'}
+[5.291643] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.298479] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.305645] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.309929] (-) TimerEvent: {}
+[5.312779] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.319302] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.323936] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.328706] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.335745] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgsConfig.cmake\n'}
+[5.341108] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgsConfig-version.cmake\n'}
+[5.346169] (flir_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/package.xml\n'}
+[5.351109] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_generator_c.so\n'}
+[5.351197] (flir_camera_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_generator_c.so" to ""\n'}
+[5.351233] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.351382] (flir_camera_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.351463] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.351847] (flir_camera_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.352051] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.352094] (flir_camera_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.352132] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_c.so\n'}
+[5.352167] (flir_camera_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_c.so" to ""\n'}
+[5.352203] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.352342] (flir_camera_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.352429] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_cpp.so\n'}
+[5.352468] (flir_camera_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[5.388066] (flir_camera_msgs) StdoutLine: {'line': b"Listing '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs'...\n"}
+[5.388151] (flir_camera_msgs) StdoutLine: {'line': b"Compiling '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/__init__.py'...\n"}
+[5.388185] (flir_camera_msgs) StdoutLine: {'line': b"Listing '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg'...\n"}
+[5.388220] (flir_camera_msgs) StdoutLine: {'line': b"Compiling '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/__init__.py'...\n"}
+[5.388250] (flir_camera_msgs) StdoutLine: {'line': b"Compiling '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/_camera_control.py'...\n"}
+[5.388278] (flir_camera_msgs) StdoutLine: {'line': b"Compiling '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages/flir_camera_msgs/msg/_image_meta_data.py'...\n"}
+[5.391322] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_generator_py.so\n'}
+[5.391495] (flir_camera_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/libflir_camera_msgs__rosidl_generator_py.so" to ""\n'}
+[5.391538] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_cExport.cmake\n'}
+[5.391666] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_cExport-relwithdebinfo.cmake\n'}
+[5.391730] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.391763] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_typesupport_fastrtps_cExport-relwithdebinfo.cmake\n'}
+[5.391892] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.391958] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.391993] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_typesupport_fastrtps_cppExport-relwithdebinfo.cmake\n'}
+[5.392025] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.392056] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_introspection_cExport-relwithdebinfo.cmake\n'}
+[5.392086] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.392116] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_cExport-relwithdebinfo.cmake\n'}
+[5.392145] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.392207] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_introspection_cppExport-relwithdebinfo.cmake\n'}
+[5.392238] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.392268] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/flir_camera_msgs__rosidl_typesupport_cppExport-relwithdebinfo.cmake\n'}
+[5.392295] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.392339] (flir_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake/export_flir_camera_msgs__rosidl_generator_pyExport-relwithdebinfo.cmake\n'}
+[5.393495] (flir_camera_msgs) CommandEnded: {'returncode': 0}
+[5.402083] (flir_camera_msgs) JobEnded: {'identifier': 'flir_camera_msgs', 'rc': 0}
+[5.402281] (spinnaker_camera_driver) JobStarted: {'identifier': 'spinnaker_camera_driver'}
+[5.408056] (spinnaker_camera_driver) JobProgress: {'identifier': 'spinnaker_camera_driver', 'progress': 'cmake'}
+[5.408702] (spinnaker_camera_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/brian-zheng/spinnaker/src/flir_camera_driver/spinnaker_camera_driver', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/brian-zheng/spinnaker/install/spinnaker_camera_driver'], 'cwd': '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'brian-zheng', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/brian-zheng', 'OLDPWD': '/home/brian-zheng/spinnaker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2985', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'brian-zheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'brian-zheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/brian-zheng-Predator-PHN16-71:@/tmp/.ICE-unix/2930,unix/brian-zheng-Predator-PHN16-71:/tmp/.ICE-unix/2930', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/732eaf36_4cb7_42d0_9aa3_01fc900bce45', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.410106] (-) TimerEvent: {}
+[5.457538] (spinnaker_camera_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[5.510299] (-) TimerEvent: {}
+[5.514884] (spinnaker_camera_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[5.535078] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.610497] (-) TimerEvent: {}
+[5.647858] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.654991] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.655068] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.655132] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.668066] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.710685] (-) TimerEvent: {}
+[5.782871] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.788119] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.788240] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.788521] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.791342] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found inc dir: SPINNAKER_INCLUDE_DIRS-NOTFOUND\n'}
+[5.791616] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found variable: FALSE at SPINNAKER_LIBRARIES-NOTFOUND and SPINNAKER_INCLUDE_DIRS-NOTFOUND\n'}
+[5.791691] (spinnaker_camera_driver) StdoutLine: {'line': b'-- spinnaker not found\n'}
+[5.791726] (spinnaker_camera_driver) StdoutLine: {'line': b'-- libSpinnaker not found in system library path\n'}
+[5.810847] (-) TimerEvent: {}
+[5.858041] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Running download_spinnaker script with arguments: x86_64 /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/usr/lib noble\n'}
+[5.910952] (-) TimerEvent: {}
+[6.011147] (-) TimerEvent: {}
+[6.111528] (-) TimerEvent: {}
+[6.212054] (-) TimerEvent: {}
+[6.312721] (-) TimerEvent: {}
+[6.413341] (-) TimerEvent: {}
+[6.513972] (-) TimerEvent: {}
+[6.614567] (-) TimerEvent: {}
+[6.715192] (-) TimerEvent: {}
+[6.815782] (-) TimerEvent: {}
+[6.916431] (-) TimerEvent: {}
+[7.017056] (-) TimerEvent: {}
+[7.117563] (-) TimerEvent: {}
+[7.218156] (-) TimerEvent: {}
+[7.318558] (-) TimerEvent: {}
+[7.419130] (-) TimerEvent: {}
+[7.519650] (-) TimerEvent: {}
+[7.620255] (-) TimerEvent: {}
+[7.720779] (-) TimerEvent: {}
+[7.821343] (-) TimerEvent: {}
+[7.921855] (-) TimerEvent: {}
+[8.022439] (-) TimerEvent: {}
+[8.122897] (-) TimerEvent: {}
+[8.223543] (-) TimerEvent: {}
+[8.324044] (-) TimerEvent: {}
+[8.424508] (-) TimerEvent: {}
+[8.524958] (-) TimerEvent: {}
+[8.625564] (-) TimerEvent: {}
+[8.726167] (-) TimerEvent: {}
+[8.826711] (-) TimerEvent: {}
+[8.927213] (-) TimerEvent: {}
+[9.027697] (-) TimerEvent: {}
+[9.128126] (-) TimerEvent: {}
+[9.228644] (-) TimerEvent: {}
+[9.329205] (-) TimerEvent: {}
+[9.429688] (-) TimerEvent: {}
+[9.530216] (-) TimerEvent: {}
+[9.630796] (-) TimerEvent: {}
+[9.731339] (-) TimerEvent: {}
+[9.831883] (-) TimerEvent: {}
+[9.932474] (-) TimerEvent: {}
+[10.032952] (-) TimerEvent: {}
+[10.133501] (-) TimerEvent: {}
+[10.234006] (-) TimerEvent: {}
+[10.334631] (-) TimerEvent: {}
+[10.435173] (-) TimerEvent: {}
+[10.535685] (-) TimerEvent: {}
+[10.636241] (-) TimerEvent: {}
+[10.736808] (-) TimerEvent: {}
+[10.837350] (-) TimerEvent: {}
+[10.937940] (-) TimerEvent: {}
+[11.038477] (-) TimerEvent: {}
+[11.139062] (-) TimerEvent: {}
+[11.239651] (-) TimerEvent: {}
+[11.340200] (-) TimerEvent: {}
+[11.440771] (-) TimerEvent: {}
+[11.541317] (-) TimerEvent: {}
+[11.641889] (-) TimerEvent: {}
+[11.742462] (-) TimerEvent: {}
+[11.843009] (-) TimerEvent: {}
+[11.943587] (-) TimerEvent: {}
+[12.044063] (-) TimerEvent: {}
+[12.144529] (-) TimerEvent: {}
+[12.244814] (-) TimerEvent: {}
+[12.345182] (-) TimerEvent: {}
+[12.445620] (-) TimerEvent: {}
+[12.546203] (-) TimerEvent: {}
+[12.646805] (-) TimerEvent: {}
+[12.747356] (-) TimerEvent: {}
+[12.847839] (-) TimerEvent: {}
+[12.948039] (-) TimerEvent: {}
+[13.048313] (-) TimerEvent: {}
+[13.073732] (spinnaker_camera_driver) StdoutLine: {'line': b'-- PROCESS RESULT: CPU architecture is %s x86_64\n'}
+[13.073846] (spinnaker_camera_driver) StdoutLine: {'line': b'OS code name is %s noble\n'}
+[13.073882] (spinnaker_camera_driver) StdoutLine: {'line': b'Destination folder is %s /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/usr/lib\n'}
+[13.073913] (spinnaker_camera_driver) StdoutLine: {'line': b'Downloading SDK archive from https://pfrommer.us/Spinnaker/Ubuntu24.04/spinnaker-4.0.0.116-amd64-pkg-24.04.tar.gz...\n'}
+[13.073943] (spinnaker_camera_driver) StdoutLine: {'line': b'Unpacking tarball.\n'}
+[13.073972] (spinnaker_camera_driver) StdoutLine: {'line': b'Unpacking debs.\n'}
+[13.074001] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/spinnaker-doc_4.0.0.116_amd64.deb\n'}
+[13.074030] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/libspinnaker-c_4.0.0.116_amd64.deb\n'}
+[13.074058] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/libgentl_4.0.0.116_amd64.deb\n'}
+[13.074087] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/libspinnaker-c-dev_4.0.0.116_amd64.deb\n'}
+[13.074122] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/spinnaker_4.0.0.116_amd64.deb\n'}
+[13.074153] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/libspinnaker_4.0.0.116_amd64.deb\n'}
+[13.074182] (spinnaker_camera_driver) StdoutLine: {'line': b'Extracting /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/spinnaker-4.0.0.116-amd64/libspinnaker-dev_4.0.0.116_amd64.deb\n'}
+[13.074211] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying libraries to /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/usr/lib\n'}
+[13.074241] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libSpinnaker_C.so\n'}
+[13.074271] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libSpinnaker_C.so.4.0.0.116\n'}
+[13.074301] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libSpinnaker.so\n'}
+[13.074332] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libSpinnaker.so.4\n'}
+[13.074393] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libSpinnaker_C.so.4\n'}
+[13.074425] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libSpinnaker.so.4.0.0.116\n'}
+[13.074454] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libGCBase_gcc11_v3_0.so\n'}
+[13.074482] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libGenApi_gcc11_v3_0.so\n'}
+[13.074511] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libXmlParser_gcc11_v3_0.so\n'}
+[13.074539] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libMathParser_gcc11_v3_0.so\n'}
+[13.074567] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libLog_gcc11_v3_0.so\n'}
+[13.074595] (spinnaker_camera_driver) StdoutLine: {'line': b'Copying: libNodeMapData_gcc11_v3_0.so\n'}
+[13.074622] (spinnaker_camera_driver) StdoutLine: {'line': b'\n'}
+[13.074652] (spinnaker_camera_driver) StdoutLine: {'line': b'-- libSpinnaker library location: /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/usr/lib/libSpinnaker.so\n'}
+[13.074681] (spinnaker_camera_driver) StdoutLine: {'line': b'-- libSpinnaker include location: /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/opt/spinnaker/include\n'}
+[13.074709] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found inc dir: /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/opt/spinnaker/include\n'}
+[13.074739] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found SPINNAKER: /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/opt/spinnaker/include  \n'}
+[13.075346] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[13.148487] (-) TimerEvent: {}
+[13.186854] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[13.232096] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[13.247767] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[13.248560] (-) TimerEvent: {}
+[13.261013] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[13.287204] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[13.294148] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[13.302527] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[13.312006] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[13.348712] (-) TimerEvent: {}
+[13.364120] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[13.366212] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[13.448862] (-) TimerEvent: {}
+[13.458258] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[13.477530] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[13.492357] (spinnaker_camera_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[13.549010] (-) TimerEvent: {}
+[13.549364] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.6 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[13.574572] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[13.617125] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found camera_info_manager: 5.1.5 (/opt/ros/jazzy/share/camera_info_manager/cmake)\n'}
+[13.620668] (spinnaker_camera_driver) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'\n"}
+[13.646749] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found image_transport: 5.1.5 (/opt/ros/jazzy/share/image_transport/cmake)\n'}
+[13.649163] (-) TimerEvent: {}
+[13.656611] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found flir_camera_msgs: 2.0.8 (/home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake)\n'}
+[13.670272] (spinnaker_camera_driver) StdoutLine: {'line': b'-- installing spinnaker libraries from /home/brian-zheng/spinnaker/build/spinnaker_camera_driver/opt/spinnaker/lib\n'}
+[13.672149] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_copyright: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_copyright/cmake)\n'}
+[13.672983] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)\n'}
+[13.673853] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)\n'}
+[13.674699] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)\n'}
+[13.675498] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_lint_cmake: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_lint_cmake/cmake)\n'}
+[13.676378] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)\n'}
+[13.677235] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_clang_format: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_clang_format/cmake)\n'}
+[13.678032] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_xmllint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_xmllint/cmake)\n'}
+[13.740634] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Configuring done (8.3s)\n'}
+[13.749327] (-) TimerEvent: {}
+[13.752884] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[13.756269] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/brian-zheng/spinnaker/build/spinnaker_camera_driver\n'}
+[13.763290] (spinnaker_camera_driver) CommandEnded: {'returncode': 0}
+[13.763490] (spinnaker_camera_driver) JobProgress: {'identifier': 'spinnaker_camera_driver', 'progress': 'build'}
+[13.763503] (spinnaker_camera_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver', '--', '-j20', '-l20'], 'cwd': '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'brian-zheng', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/brian-zheng', 'OLDPWD': '/home/brian-zheng/spinnaker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2985', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'brian-zheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'brian-zheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/brian-zheng-Predator-PHN16-71:@/tmp/.ICE-unix/2930,unix/brian-zheng-Predator-PHN16-71:/tmp/.ICE-unix/2930', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/732eaf36_4cb7_42d0_9aa3_01fc900bce45', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[13.812173] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/spinnaker_wrapper_impl.cpp.o\x1b[0m\n'}
+[13.812304] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/pixel_format.cpp.o\x1b[0m\n'}
+[13.812390] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/genicam_utils.cpp.o\x1b[0m\n'}
+[13.812450] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o\x1b[0m\n'}
+[13.813517] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/spinnaker_wrapper.cpp.o\x1b[0m\n'}
+[13.813728] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/camera.cpp.o\x1b[0m\n'}
+[13.813805] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/image.cpp.o\x1b[0m\n'}
+[13.849436] (-) TimerEvent: {}
+[13.949687] (-) TimerEvent: {}
+[14.049955] (-) TimerEvent: {}
+[14.150319] (-) TimerEvent: {}
+[14.250588] (-) TimerEvent: {}
+[14.350946] (-) TimerEvent: {}
+[14.451203] (-) TimerEvent: {}
+[14.551566] (-) TimerEvent: {}
+[14.651880] (-) TimerEvent: {}
+[14.752240] (-) TimerEvent: {}
+[14.852570] (-) TimerEvent: {}
+[14.952831] (-) TimerEvent: {}
+[15.053122] (-) TimerEvent: {}
+[15.153490] (-) TimerEvent: {}
+[15.253778] (-) TimerEvent: {}
+[15.354103] (-) TimerEvent: {}
+[15.454411] (-) TimerEvent: {}
+[15.554735] (-) TimerEvent: {}
+[15.654985] (-) TimerEvent: {}
+[15.755351] (-) TimerEvent: {}
+[15.855621] (-) TimerEvent: {}
+[15.955913] (-) TimerEvent: {}
+[16.056249] (-) TimerEvent: {}
+[16.156631] (-) TimerEvent: {}
+[16.256990] (-) TimerEvent: {}
+[16.357322] (-) TimerEvent: {}
+[16.457695] (-) TimerEvent: {}
+[16.558052] (-) TimerEvent: {}
+[16.658419] (-) TimerEvent: {}
+[16.758774] (-) TimerEvent: {}
+[16.859029] (-) TimerEvent: {}
+[16.959378] (-) TimerEvent: {}
+[17.059777] (-) TimerEvent: {}
+[17.160065] (-) TimerEvent: {}
+[17.260458] (-) TimerEvent: {}
+[17.360881] (-) TimerEvent: {}
+[17.461161] (-) TimerEvent: {}
+[17.561465] (-) TimerEvent: {}
+[17.661759] (-) TimerEvent: {}
+[17.762045] (-) TimerEvent: {}
+[17.862368] (-) TimerEvent: {}
+[17.962884] (-) TimerEvent: {}
+[18.063171] (-) TimerEvent: {}
+[18.163457] (-) TimerEvent: {}
+[18.263744] (-) TimerEvent: {}
+[18.364022] (-) TimerEvent: {}
+[18.464310] (-) TimerEvent: {}
+[18.564610] (-) TimerEvent: {}
+[18.664909] (-) TimerEvent: {}
+[18.765195] (-) TimerEvent: {}
+[18.865483] (-) TimerEvent: {}
+[18.965761] (-) TimerEvent: {}
+[19.066037] (-) TimerEvent: {}
+[19.166318] (-) TimerEvent: {}
+[19.266632] (-) TimerEvent: {}
+[19.366910] (-) TimerEvent: {}
+[19.467193] (-) TimerEvent: {}
+[19.567513] (-) TimerEvent: {}
+[19.667709] (-) TimerEvent: {}
+[19.767894] (-) TimerEvent: {}
+[19.868172] (-) TimerEvent: {}
+[19.968465] (-) TimerEvent: {}
+[20.068750] (-) TimerEvent: {}
+[20.168968] (-) TimerEvent: {}
+[20.269230] (-) TimerEvent: {}
+[20.369516] (-) TimerEvent: {}
+[20.469829] (-) TimerEvent: {}
+[20.570135] (-) TimerEvent: {}
+[20.670420] (-) TimerEvent: {}
+[20.770729] (-) TimerEvent: {}
+[20.871004] (-) TimerEvent: {}
+[20.971308] (-) TimerEvent: {}
+[21.071608] (-) TimerEvent: {}
+[21.171898] (-) TimerEvent: {}
+[21.272225] (-) TimerEvent: {}
+[21.372495] (-) TimerEvent: {}
+[21.472768] (-) TimerEvent: {}
+[21.573040] (-) TimerEvent: {}
+[21.673329] (-) TimerEvent: {}
+[21.773676] (-) TimerEvent: {}
+[21.874002] (-) TimerEvent: {}
+[21.974283] (-) TimerEvent: {}
+[22.074578] (-) TimerEvent: {}
+[22.174875] (-) TimerEvent: {}
+[22.275205] (-) TimerEvent: {}
+[22.375483] (-) TimerEvent: {}
+[22.475768] (-) TimerEvent: {}
+[22.576039] (-) TimerEvent: {}
+[22.676316] (-) TimerEvent: {}
+[22.776640] (-) TimerEvent: {}
+[22.876932] (-) TimerEvent: {}
+[22.977266] (-) TimerEvent: {}
+[23.077545] (-) TimerEvent: {}
+[23.177850] (-) TimerEvent: {}
+[23.278193] (-) TimerEvent: {}
+[23.378470] (-) TimerEvent: {}
+[23.478771] (-) TimerEvent: {}
+[23.579105] (-) TimerEvent: {}
+[23.679378] (-) TimerEvent: {}
+[23.779678] (-) TimerEvent: {}
+[23.879951] (-) TimerEvent: {}
+[23.980229] (-) TimerEvent: {}
+[24.080509] (-) TimerEvent: {}
+[24.180791] (-) TimerEvent: {}
+[24.281066] (-) TimerEvent: {}
+[24.381335] (-) TimerEvent: {}
+[24.481634] (-) TimerEvent: {}
+[24.581911] (-) TimerEvent: {}
+[24.682184] (-) TimerEvent: {}
+[24.782479] (-) TimerEvent: {}
+[24.882753] (-) TimerEvent: {}
+[24.983024] (-) TimerEvent: {}
+[25.083320] (-) TimerEvent: {}
+[25.183674] (-) TimerEvent: {}
+[25.284013] (-) TimerEvent: {}
+[25.384347] (-) TimerEvent: {}
+[25.484595] (-) TimerEvent: {}
+[25.584871] (-) TimerEvent: {}
+[25.685148] (-) TimerEvent: {}
+[25.785459] (-) TimerEvent: {}
+[25.885761] (-) TimerEvent: {}
+[25.986047] (-) TimerEvent: {}
+[26.086318] (-) TimerEvent: {}
+[26.186629] (-) TimerEvent: {}
+[26.286920] (-) TimerEvent: {}
+[26.387211] (-) TimerEvent: {}
+[26.487521] (-) TimerEvent: {}
+[26.587812] (-) TimerEvent: {}
+[26.688102] (-) TimerEvent: {}
+[26.788429] (-) TimerEvent: {}
+[26.888731] (-) TimerEvent: {}
+[26.983581] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libcamera_driver.so\x1b[0m\n'}
+[26.988798] (-) TimerEvent: {}
+[27.089059] (-) TimerEvent: {}
+[27.189343] (-) TimerEvent: {}
+[27.289651] (-) TimerEvent: {}
+[27.303598] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 80%] Built target camera_driver\n'}
+[27.319263] (spinnaker_camera_driver) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver_node.dir/src/camera_driver_node.cpp.o\x1b[0m\n'}
+[27.389791] (-) TimerEvent: {}
+[27.490071] (-) TimerEvent: {}
+[27.590351] (-) TimerEvent: {}
+[27.690649] (-) TimerEvent: {}
+[27.790932] (-) TimerEvent: {}
+[27.891227] (-) TimerEvent: {}
+[27.991510] (-) TimerEvent: {}
+[28.091800] (-) TimerEvent: {}
+[28.192088] (-) TimerEvent: {}
+[28.292377] (-) TimerEvent: {}
+[28.392692] (-) TimerEvent: {}
+[28.492922] (-) TimerEvent: {}
+[28.593195] (-) TimerEvent: {}
+[28.693478] (-) TimerEvent: {}
+[28.793755] (-) TimerEvent: {}
+[28.894059] (-) TimerEvent: {}
+[28.994349] (-) TimerEvent: {}
+[29.094652] (-) TimerEvent: {}
+[29.194944] (-) TimerEvent: {}
+[29.295262] (-) TimerEvent: {}
+[29.386369] (spinnaker_camera_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable camera_driver_node\x1b[0m\n'}
+[29.395439] (-) TimerEvent: {}
+[29.495730] (-) TimerEvent: {}
+[29.507473] (spinnaker_camera_driver) StdoutLine: {'line': b'[100%] Built target camera_driver_node\n'}
+[29.516116] (spinnaker_camera_driver) CommandEnded: {'returncode': 0}
+[29.516738] (spinnaker_camera_driver) JobProgress: {'identifier': 'spinnaker_camera_driver', 'progress': 'install'}
+[29.516761] (spinnaker_camera_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver'], 'cwd': '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'brian-zheng', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/brian-zheng', 'OLDPWD': '/home/brian-zheng/spinnaker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2985', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'brian-zheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'brian-zheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/brian-zheng-Predator-PHN16-71:@/tmp/.ICE-unix/2930,unix/brian-zheng-Predator-PHN16-71:/tmp/.ICE-unix/2930', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/732eaf36_4cb7_42d0_9aa3_01fc900bce45', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/brian-zheng/spinnaker/build/spinnaker_camera_driver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[29.523019] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[29.523199] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[29.523669] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libGCBase_gcc11_v3_0.so\n'}
+[29.529693] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libGenApi_gcc11_v3_0.so\n'}
+[29.535502] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libLog_gcc11_v3_0.so\n'}
+[29.542594] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libMathParser_gcc11_v3_0.so\n'}
+[29.548208] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libNodeMapData_gcc11_v3_0.so\n'}
+[29.554830] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libSpinnaker.so\n'}
+[29.562597] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libSpinnaker.so.4\n'}
+[29.567815] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libSpinnaker.so.4.0.0.116\n'}
+[29.574480] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libSpinnaker_C.so\n'}
+[29.581895] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libSpinnaker_C.so.4\n'}
+[29.586980] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libSpinnaker_C.so.4.0.0.116\n'}
+[29.591919] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/libXmlParser_gcc11_v3_0.so\n'}
+[29.595838] (-) TimerEvent: {}
+[29.597753] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/liblog4cpp_gcc11_v3_0.so\n'}
+[29.604236] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/spinnaker-gentl/Spinnaker_GenTL.cti\n'}
+[29.609642] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/./lib/spinnaker-gentl/log4cpp.gentl.property\n'}
+[29.617243] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/spinnaker_camera_driver//camera_driver_node\n'}
+[29.622471] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverConfig.cmake\n'}
+[29.628440] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverConfigVersion.cmake\n'}
+[29.635957] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/camera.hpp\n'}
+[29.641653] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/camera_driver.hpp\n'}
+[29.647658] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/exposure_controller.hpp\n'}
+[29.652920] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/image.hpp\n'}
+[29.659319] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/logging.hpp\n'}
+[29.665287] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/pixel_format.hpp\n'}
+[29.671153] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/spinnaker_wrapper.hpp\n'}
+[29.675972] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include/spinnaker_camera_driver/synchronizer.hpp\n'}
+[29.682918] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/blackfly.yaml\n'}
+[29.690267] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/blackfly_s.yaml\n'}
+[29.695641] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/chameleon.yaml\n'}
+[29.695888] (-) TimerEvent: {}
+[29.701340] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/flir_ax5.yaml\n'}
+[29.707308] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/grasshopper.yaml\n'}
+[29.713909] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//config/oryx.yaml\n'}
+[29.720377] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//launch/driver_node.launch.py\n'}
+[29.725907] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver//launch/multiple_cameras.launch.py\n'}
+[29.731919] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/spinnaker_camera_driver/linux_setup_flir\n'}
+[29.739283] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/ament_index/resource_index/package_run_dependencies/spinnaker_camera_driver\n'}
+[29.745566] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/ament_index/resource_index/parent_prefix_path/spinnaker_camera_driver\n'}
+[29.752477] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/ament_prefix_path.sh\n'}
+[29.759163] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/ament_prefix_path.dsv\n'}
+[29.764428] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/path.sh\n'}
+[29.770695] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/environment/path.dsv\n'}
+[29.777670] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.bash\n'}
+[29.783923] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.sh\n'}
+[29.788923] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.zsh\n'}
+[29.795004] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/local_setup.dsv\n'}
+[29.795992] (-) TimerEvent: {}
+[29.800925] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/package.dsv\n'}
+[29.806906] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/ament_index/resource_index/packages/spinnaker_camera_driver\n'}
+[29.812519] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/ament_index/resource_index/rclcpp_components/spinnaker_camera_driver\n'}
+[29.819232] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/cmake/spinnaker_camera_driverConfig.cmake\n'}
+[29.826707] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/cmake/spinnaker_camera_driverConfig-version.cmake\n'}
+[29.832851] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/share/spinnaker_camera_driver/package.xml\n'}
+[29.839549] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/libcamera_driver.so\n'}
+[29.847303] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/libcamera_driver.so" to ""\n'}
+[29.847453] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverTargets.cmake\n'}
+[29.847518] (spinnaker_camera_driver) StdoutLine: {'line': b'-- Installing: /home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib/cmake/spinnaker_camera_driver/spinnaker_camera_driverTargets-relwithdebinfo.cmake\n'}
+[29.849065] (spinnaker_camera_driver) CommandEnded: {'returncode': 0}
+[29.861690] (spinnaker_camera_driver) JobEnded: {'identifier': 'spinnaker_camera_driver', 'rc': 0}
+[29.861920] (spinnaker_synchronized_camera_driver) JobStarted: {'identifier': 'spinnaker_synchronized_camera_driver'}
+[29.869557] (spinnaker_synchronized_camera_driver) JobProgress: {'identifier': 'spinnaker_synchronized_camera_driver', 'progress': 'cmake'}
+[29.870472] (spinnaker_synchronized_camera_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/brian-zheng/spinnaker/src/flir_camera_driver/spinnaker_synchronized_camera_driver', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver'], 'cwd': '/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'brian-zheng', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib:/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/brian-zheng', 'OLDPWD': '/home/brian-zheng/spinnaker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2985', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'brian-zheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'brian-zheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/brian-zheng-Predator-PHN16-71:@/tmp/.ICE-unix/2930,unix/brian-zheng-Predator-PHN16-71:/tmp/.ICE-unix/2930', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/732eaf36_4cb7_42d0_9aa3_01fc900bce45', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/brian-zheng/spinnaker/install/spinnaker_camera_driver:/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/brian-zheng/spinnaker/install/spinnaker_camera_driver:/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[29.896185] (-) TimerEvent: {}
+[29.925746] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[29.978343] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[29.996341] (-) TimerEvent: {}
+[29.999548] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[30.096550] (-) TimerEvent: {}
+[30.116283] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[30.128202] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[30.128512] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[30.128911] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[30.142949] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[30.196645] (-) TimerEvent: {}
+[30.255089] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[30.260681] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[30.260842] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[30.260964] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[30.263968] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[30.296744] (-) TimerEvent: {}
+[30.361900] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[30.396935] (-) TimerEvent: {}
+[30.407381] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[30.444355] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[30.451450] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[30.459784] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[30.469418] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[30.497087] (-) TimerEvent: {}
+[30.512162] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[30.513663] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[30.588970] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[30.597256] (-) TimerEvent: {}
+[30.620891] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[30.648099] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[30.692002] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.6 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[30.697415] (-) TimerEvent: {}
+[30.712688] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found camera_info_manager: 5.1.5 (/opt/ros/jazzy/share/camera_info_manager/cmake)\n'}
+[30.750462] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'\n"}
+[30.772527] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found image_transport: 5.1.5 (/opt/ros/jazzy/share/image_transport/cmake)\n'}
+[30.780397] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found flir_camera_msgs: 2.0.8 (/home/brian-zheng/spinnaker/install/flir_camera_msgs/share/flir_camera_msgs/cmake)\n'}
+[30.791501] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[30.795163] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- \n'}
+[30.795240] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b' Properties for TARGET spinnaker_camera_driver::camera_driver:\n'}
+[30.795274] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'   spinnaker_camera_driver::camera_driver.INTERFACE_INCLUDE_DIRECTORIES = "/home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include;/home/brian-zheng/spinnaker/install/spinnaker_camera_driver/include"\n'}
+[30.795307] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'\n'}
+[30.797012] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_copyright: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_copyright/cmake)\n'}
+[30.797471] (-) TimerEvent: {}
+[30.797778] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)\n'}
+[30.799332] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)\n'}
+[30.799645] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)\n'}
+[30.800622] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_lint_cmake: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_lint_cmake/cmake)\n'}
+[30.801662] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)\n'}
+[30.802518] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_clang_format: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_clang_format/cmake)\n'}
+[30.803459] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Found ament_cmake_xmllint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_xmllint/cmake)\n'}
+[30.859196] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Configuring done (1.0s)\n'}
+[30.870767] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[30.874380] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver\n'}
+[30.882158] (spinnaker_synchronized_camera_driver) CommandEnded: {'returncode': 0}
+[30.882525] (spinnaker_synchronized_camera_driver) JobProgress: {'identifier': 'spinnaker_synchronized_camera_driver', 'progress': 'build'}
+[30.882538] (spinnaker_synchronized_camera_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver', '--', '-j20', '-l20'], 'cwd': '/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'brian-zheng', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib:/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/brian-zheng', 'OLDPWD': '/home/brian-zheng/spinnaker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2985', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'brian-zheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'brian-zheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/brian-zheng-Predator-PHN16-71:@/tmp/.ICE-unix/2930,unix/brian-zheng-Predator-PHN16-71:/tmp/.ICE-unix/2930', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/732eaf36_4cb7_42d0_9aa3_01fc900bce45', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/brian-zheng/spinnaker/install/spinnaker_camera_driver:/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/brian-zheng/spinnaker/install/spinnaker_camera_driver:/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[30.897594] (-) TimerEvent: {}
+[30.939379] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/master_exposure_controller.cpp.o\x1b[0m\n'}
+[30.939575] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/follower_exposure_controller.cpp.o\x1b[0m\n'}
+[30.939789] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/exposure_controller_factory.cpp.o\x1b[0m\n'}
+[30.939963] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/time_keeper.cpp.o\x1b[0m\n'}
+[30.940077] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/time_estimator.cpp.o\x1b[0m\n'}
+[30.940161] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver.dir/src/synchronized_camera_driver.cpp.o\x1b[0m\n'}
+[30.997767] (-) TimerEvent: {}
+[31.098131] (-) TimerEvent: {}
+[31.198462] (-) TimerEvent: {}
+[31.298717] (-) TimerEvent: {}
+[31.398978] (-) TimerEvent: {}
+[31.499341] (-) TimerEvent: {}
+[31.599622] (-) TimerEvent: {}
+[31.699877] (-) TimerEvent: {}
+[31.800166] (-) TimerEvent: {}
+[31.900536] (-) TimerEvent: {}
+[32.000910] (-) TimerEvent: {}
+[32.101190] (-) TimerEvent: {}
+[32.201533] (-) TimerEvent: {}
+[32.301889] (-) TimerEvent: {}
+[32.402251] (-) TimerEvent: {}
+[32.502620] (-) TimerEvent: {}
+[32.602991] (-) TimerEvent: {}
+[32.703256] (-) TimerEvent: {}
+[32.803626] (-) TimerEvent: {}
+[32.903993] (-) TimerEvent: {}
+[33.004275] (-) TimerEvent: {}
+[33.104678] (-) TimerEvent: {}
+[33.205045] (-) TimerEvent: {}
+[33.305418] (-) TimerEvent: {}
+[33.405780] (-) TimerEvent: {}
+[33.506126] (-) TimerEvent: {}
+[33.606471] (-) TimerEvent: {}
+[33.706828] (-) TimerEvent: {}
+[33.807178] (-) TimerEvent: {}
+[33.907510] (-) TimerEvent: {}
+[34.007903] (-) TimerEvent: {}
+[34.108219] (-) TimerEvent: {}
+[34.208514] (-) TimerEvent: {}
+[34.308799] (-) TimerEvent: {}
+[34.409091] (-) TimerEvent: {}
+[34.509458] (-) TimerEvent: {}
+[34.609703] (-) TimerEvent: {}
+[34.709985] (-) TimerEvent: {}
+[34.810254] (-) TimerEvent: {}
+[34.853595] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libsynchronized_camera_driver.so\x1b[0m\n'}
+[34.910426] (-) TimerEvent: {}
+[34.974928] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 77%] Built target synchronized_camera_driver\n'}
+[34.991194] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/synchronized_camera_driver_node.dir/src/synchronized_camera_driver_node.cpp.o\x1b[0m\n'}
+[35.010600] (-) TimerEvent: {}
+[35.110813] (-) TimerEvent: {}
+[35.211111] (-) TimerEvent: {}
+[35.311395] (-) TimerEvent: {}
+[35.411586] (-) TimerEvent: {}
+[35.511795] (-) TimerEvent: {}
+[35.612076] (-) TimerEvent: {}
+[35.712363] (-) TimerEvent: {}
+[35.812663] (-) TimerEvent: {}
+[35.912862] (-) TimerEvent: {}
+[36.013056] (-) TimerEvent: {}
+[36.113348] (-) TimerEvent: {}
+[36.213649] (-) TimerEvent: {}
+[36.313875] (-) TimerEvent: {}
+[36.414070] (-) TimerEvent: {}
+[36.514352] (-) TimerEvent: {}
+[36.614668] (-) TimerEvent: {}
+[36.714896] (-) TimerEvent: {}
+[36.815187] (-) TimerEvent: {}
+[36.915514] (-) TimerEvent: {}
+[37.015730] (-) TimerEvent: {}
+[37.115956] (-) TimerEvent: {}
+[37.138924] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable synchronized_camera_driver_node\x1b[0m\n'}
+[37.216134] (-) TimerEvent: {}
+[37.247331] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'[100%] Built target synchronized_camera_driver_node\n'}
+[37.258397] (spinnaker_synchronized_camera_driver) CommandEnded: {'returncode': 0}
+[37.258841] (spinnaker_synchronized_camera_driver) JobProgress: {'identifier': 'spinnaker_synchronized_camera_driver', 'progress': 'install'}
+[37.259082] (spinnaker_synchronized_camera_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver'], 'cwd': '/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'brian-zheng', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/brian-zheng/spinnaker/install/spinnaker_camera_driver/lib:/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/brian-zheng', 'OLDPWD': '/home/brian-zheng/spinnaker/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2985', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'brian-zheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'brian-zheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/brian-zheng-Predator-PHN16-71:@/tmp/.ICE-unix/2930,unix/brian-zheng-Predator-PHN16-71:/tmp/.ICE-unix/2930', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/732eaf36_4cb7_42d0_9aa3_01fc900bce45', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/brian-zheng/spinnaker/install/spinnaker_camera_driver:/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/brian-zheng/spinnaker/install/flir_camera_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/brian-zheng/spinnaker/install/spinnaker_camera_driver:/home/brian-zheng/spinnaker/install/flir_camera_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[37.265452] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[37.266116] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[37.266675] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/lib/spinnaker_synchronized_camera_driver//synchronized_camera_driver_node\n'}
+[37.276903] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/lib/libsynchronized_camera_driver.so\n'}
+[37.284058] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver//launch/follower_example.launch.py\n'}
+[37.297024] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver//launch/master_example.launch.py\n'}
+[37.304085] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver//launch/primary_secondary.launch.py\n'}
+[37.315296] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/ament_index/resource_index/package_run_dependencies/spinnaker_synchronized_camera_driver\n'}
+[37.316296] (-) TimerEvent: {}
+[37.325340] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/ament_index/resource_index/parent_prefix_path/spinnaker_synchronized_camera_driver\n'}
+[37.338150] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/environment/ament_prefix_path.sh\n'}
+[37.346694] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/environment/ament_prefix_path.dsv\n'}
+[37.356168] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/environment/path.sh\n'}
+[37.368357] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/environment/path.dsv\n'}
+[37.379702] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/local_setup.bash\n'}
+[37.391024] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/local_setup.sh\n'}
+[37.403632] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/local_setup.zsh\n'}
+[37.415891] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/local_setup.dsv\n'}
+[37.416376] (-) TimerEvent: {}
+[37.428870] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/package.dsv\n'}
+[37.436169] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/ament_index/resource_index/packages/spinnaker_synchronized_camera_driver\n'}
+[37.445100] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/ament_index/resource_index/rclcpp_components/spinnaker_synchronized_camera_driver\n'}
+[37.456754] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/cmake/spinnaker_synchronized_camera_driverConfig.cmake\n'}
+[37.469149] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/cmake/spinnaker_synchronized_camera_driverConfig-version.cmake\n'}
+[37.482262] (spinnaker_synchronized_camera_driver) StdoutLine: {'line': b'-- Symlinking: /home/brian-zheng/spinnaker/install/spinnaker_synchronized_camera_driver/share/spinnaker_synchronized_camera_driver/package.xml\n'}
+[37.492224] (spinnaker_synchronized_camera_driver) CommandEnded: {'returncode': 0}
+[37.504691] (spinnaker_synchronized_camera_driver) JobEnded: {'identifier': 'spinnaker_synchronized_camera_driver', 'rc': 0}
+[37.505569] (-) EventReactorShutdown: {}

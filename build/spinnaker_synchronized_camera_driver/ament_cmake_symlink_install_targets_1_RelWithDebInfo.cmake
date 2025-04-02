@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/brian-zheng/spinnaker/build/spinnaker_synchronized_camera_driver/libsynchronized_camera_driver.so" "TARGETS" "synchronized_camera_driver" "DESTINATION" "lib")

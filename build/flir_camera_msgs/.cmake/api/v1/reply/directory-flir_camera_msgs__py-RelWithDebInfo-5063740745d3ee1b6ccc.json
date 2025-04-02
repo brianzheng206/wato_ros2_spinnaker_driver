@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "flir_camera_msgs__py",
+		"source" : "/home/brian-zheng/spinnaker/build/flir_camera_msgs/flir_camera_msgs__py"
+	}
+}

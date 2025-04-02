@@ -1,0 +1,12 @@
+{
+  "package_name": "flir_camera_msgs",
+  "output_dir": "/home/brian-zheng/spinnaker/build/flir_camera_msgs/rosidl_generator_type_description/flir_camera_msgs",
+  "idl_tuples": [
+    "/home/brian-zheng/spinnaker/build/flir_camera_msgs/rosidl_adapter/flir_camera_msgs:msg/ImageMetaData.idl",
+    "/home/brian-zheng/spinnaker/build/flir_camera_msgs/rosidl_adapter/flir_camera_msgs:msg/CameraControl.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs"
+  ]
+}
